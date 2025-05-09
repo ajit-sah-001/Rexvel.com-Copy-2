@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rexvel Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styel.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://rexvel.com/assets/img/final-hlogo.png" alt="rexvel 💀" width="110px"
+                        height="30px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <!-- Dropdown for Services -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active text-primary" href="#" id="servicesDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item " href="Services.html">Services</a></li>
+                                <li><a class="dropdown-item" href="webDevlopement.html">Web
+                                        Development</a></li>
+                                <li><a class="dropdown-item" href="appDevelpement.html">Mobile App
+                                        Development</a></li>
+                                <li><a class="dropdown-item active text-primary" href="#">Cybersecurity</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Career.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">BookMyPan</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a class="btn custom-btn" type="submit" href="Contact.html">GET STARTED</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Cybersecurity Section Start -->
+        <section class="container my-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card shadow-lg border-0 p-4">
+                        <h2 class="card-title text-primary fs-1 fw-bold"><span class="text-danger">C</span>yber<span class="text-danger">S</span>ecurity</h2>
+                        <p class="card-text fs-5 text-secondary">
+                            Cybersecurity is the strategic practice of defending systems, networks, and data from cyber
+                            threats. It involves cutting-edge technologies, risk management strategies, and security
+                            protocols to ensure the confidentiality, integrity, and availability of digital information.
+                            In an increasingly connected world, cybersecurity is essential for protecting personal
+                            privacy, corporate assets, and national security from evolving digital attacks.
+                        </p>
+                        <a class="btn btn-outline-primary btn-lg mt-3" href="#"  data-bs-toggle="modal" data-bs-target="#cyberModal">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 text-center">
+                    <img src="https://t4.ftcdn.net/jpg/02/45/63/69/360_F_245636933_kY23ohGptK5t6n8wGSXIgLgVXWeHJRct.jpg"
+                        alt="Cybersecurity illustration" class="img-fluid rounded-4 shadow">
+                </div>
+            </div>
+        </section>
+        <!-- Cybersecurity Section End -->
+        <!-- Cybersecurity Job Requirement Form Start -->
+        <section class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="card shadow-lg p-4 border-0">
+                        <h2 class="text-primary fw-bold mb-4">Post a Cybersecurity Job</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="jobTitle" class="form-label fw-semibold">Job Title</label>
+                                <input type="text" class="form-control" id="jobTitle"
+                                    placeholder=" Cybersecurity Analyst Possion">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="companyName" class="form-label fw-semibold">Company Name</label>
+                                <input type="text" class="form-control" id="companyName"
+                                    placeholder="Enter your Old Company Name">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="experience" class="form-label fw-semibold">Required Experience</label>
+                                <select class="form-select" id="experience">
+                                    <option selected disabled>Select experience level</option>
+                                    <option value="fresher">Fresher</option>
+                                    <option value="1-2">1–2 Years</option>
+                                    <option value="3-5">3–5 Years</option>
+                                    <option value="5+">5+ Years</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="skills" class="form-label fw-semibold">Required Skills</label>
+                                <input type="text" class="form-control" id="skills"
+                                    placeholder="e.g. Network Security, Penetration Testing, Python,Java,C,C++ etc..">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="location" class="form-label fw-semibold">Job Location</label>
+                                <input type="text" class="form-control" id="location"
+                                    placeholder="Enter Address">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="mobile" class="form-label fw-semibold">Mobile Number</label>
+                                    <input type="tel" class="form-control" id="mobile"
+                                        placeholder="Number">
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label fw-semibold">Email Address</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="Enter HR or recruiter email">
+                                </div>
+                            </div>
+
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit Job</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Cybersecurity Job Requirement Form End -->
+        <!-- Cybersecurity model st -->
+        <div class="modal fade" id="cyberModal" tabindex="-1" aria-labelledby="cyberModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content shadow-lg border-0 rounded-4">
+                <!-- Header -->
+                <div class="modal-header bg-dark text-white rounded-top-4">
+                  <h5 class="modal-title fw-bold" id="cyberModalLabel">🔐 <span class="text-danger">C</span>yber<span class="text-danger">S</span>ecurity <span class="text-danger">O</span>verview</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                  <div class="mb-4">
+                    <h6 class="fw-bold text-primary fs-3">What is Cybersecurity?</h6>
+                    <p class="text-muted">
+                      Cybersecurity is the practice of defending digital systems, networks, and data from cyber threats such as hacking, malware, and data breaches. It plays a vital role in protecting information and infrastructure globally.
+                    </p>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <h6 class="fw-bold text-success fs-5">Key Fields</h6>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">🧠 Ethical Hacking & Pen Testing</li>
+                        <li class="list-group-item">🛡️ Network & Endpoint Security</li>
+                        <li class="list-group-item">☁️ Cloud Security</li>
+                        <li class="list-group-item">🔍 Threat Intelligence & Analysis</li>
+                        <li class="list-group-item">⚙️ Security Operations (SOC)</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h6 class="fw-bold text-info fs-5">Top Certifications</h6>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">📜 CEH (Certified Ethical Hacker)</li>
+                        <li class="list-group-item">📜 CompTIA Security+</li>
+                        <li class="list-group-item">📜 CISSP (Security Professional)</li>
+                        <li class="list-group-item">📜 OSCP (Offensive Security)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <h6 class="fw-bold text-danger">Cybersecurity Career Paths</h6>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="p-3 border rounded">
+                          🧑‍💻 <strong>Security Analyst</strong><br><small class="text-muted">Monitor & prevent attacks</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 border rounded">
+                          👨‍🏫 <strong>Penetration Tester</strong><br><small class="text-muted">Test systems for weaknesses</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 border rounded">
+                          🏢 <strong>Security Consultant</strong><br><small class="text-muted">Advise organizations on protection</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQs -->
+                  <div>
+                    <h6 class="fw-bold text-secondary">FAQs</h6>
+                    <div class="accordion" id="faqAccordion">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                            What skills are needed in cybersecurity?
+                          </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            Key skills include networking, scripting (Python, Bash), security tools (Wireshark, Metasploit), and certifications.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq2">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                            How do I start a career in cybersecurity?
+                          </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            Begin with learning the basics of networks and Linux, get hands-on practice in labs like TryHackMe, and pursue certifications like CEH or Security+.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Footer for cyberSecurity  -->
+                <div class="modal-footer bg-light rounded-bottom-4">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+        <!-- Cybersecurity model end -->
+
+
+    </main>
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>
+                        <img src="https://rexvel.com/assets/img/final-hlogo.png" alt="Rexvel Logo"
+                            style="max-width: 180px; ">
+                    </h5>
+                    <p>Katihar, Bihar, India, 854105</p>
+                    <p>Phone: +91 7979 864304</p>
+                    <p>Email: info@rexvel.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>USEFUL LINKS</h5>
+                    <ul>
+                        <li><a href="#"> <i class="bi bi-chevron-right"></i>About us</a></li>
+                        <li><a href="#"> <i class="bi bi-chevron-right"></i>Employee Login</a></li>
+                        <li><a href="#"> <i class="bi bi-chevron-right"></i>Terms of service</a></li>
+                        <li><a href="#"> <i class="bi bi-chevron-right"></i>Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>OUR SERVICES</h5>
+                    <ul>
+                        <li><a href="#"> <i class="bi bi-chevron-right"></i> Web design</a></li>
+                        <li><a href="#"> <i class="bi bi-chevron-right"></i> Web development</a></li>
+                        <li><a href="#"> <i class="bi bi-chevron-right"></i> Marketing</a></li>
+                        <li><a href="#"> <i class="bi bi-chevron-right"></i> Graphic design</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>JOIN OUR NEWSLETTER</h5>
+                    <p>Join our Newsletter for FREE to get best offers and coupon codes.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email" required>
+                        <button class="m-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© Copyright REXVEL WEB SOLUTION. ALL RIGHT RESERVED<br>DESIGNED & DEVELOPED BY:-
+                    <strong>AJIT❤️NILAM</strong>
+                </p>
+                <div class="social-icons justify-content-center">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- modal under concate page stt -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sorry 😅 Not make web pages</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <H5>Sorry Under concact Web page</H5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal under concate page End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
